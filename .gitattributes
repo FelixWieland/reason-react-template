@@ -1,2 +1,2 @@
-*.re linguist-language=ReasonML
+*.re linguist-language=Reason
 watcher.js linguist-vendor
