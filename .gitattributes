@@ -1,2 +1,1 @@
-*.re linguist-language=Reason
 watcher.js linguist-vendor
