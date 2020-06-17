@@ -1,4 +1,4 @@
-# ReasonReact Template & Examples
+# ReasonReact Template
 
 This is:
 - A template for your new ReasonReact project.
