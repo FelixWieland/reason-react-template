@@ -1,0 +1,1 @@
+{ "dirs" : [ "src" , "src/components" ] , "pkgs" : [ [ "bs-platform" , "/home/felixwieland/Dokumente/Local/ReasonML/template/node_modules/bs-platform" ] , [ "reason-react" , "/home/felixwieland/Dokumente/Local/ReasonML/template/node_modules/reason-react" ] ] , "generated" : [] }
