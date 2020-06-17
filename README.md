@@ -19,5 +19,5 @@ npm install
 npm run dev
 ```
 
-Open a new web page to `http://localhost:3000/`. Change any `.re` file in `src` to see the page auto-reload. **You don't need any bundler when you're developing**!
+Open a new web page to `http://localhost:3000/`. Change any `.re` file in `src` to see the page auto hot swap the react components. **You don't need any bundler when you're developing**!
 
