@@ -1,4 +1,3 @@
 *.rb linguist-language=ReasonML
-index.html linguist-vendored
-indexProduction.html
+*.html linguist-vendored
 watcher.js linguist-vendored
