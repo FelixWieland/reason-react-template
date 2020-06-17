@@ -12,10 +12,6 @@ var LAST_SUCCESS_BUILD_STAMP = localStorage.getItem('LAST_SUCCESS_BUILD_STAMP') 
 // configurable, e.g. `-ws 5000`
 var webSocketPort = 9999;
 
-function clearBody() {
-  
-}
-
 function reloadModules() {
   // Make a synchronous HTTP request for a module.
   function get(url) {
@@ -75,8 +71,6 @@ function reloadModules() {
       var mod = new Module(name, base)
       loaded[name] = mod.exports
 
-      clearBody()
-
       evalFunction(resp.content, name)(mod, mod.require, mod.exports)
       return loaded[name] = mod.exports
     }
@@ -116,7 +110,7 @@ function setUpWebSocket() {
           // No stable build!
 
           //setTimeout(() => location.reload(true), 100);
-          setTimeout(() => reloadModules(), 10)
+          reloadModules()
         }
 
       }
