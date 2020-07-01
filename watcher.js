@@ -101,8 +101,9 @@ function setUpWebSocket() {
       websocketReloader = new WebSocket(`ws://${window.location.hostname}:${webSocketPort}`);
       websocketReloader.onmessage = (message) => {
         var newData = JSON.parse(message.data).LAST_SUCCESS_BUILD_STAMP;
-        console.log(newData)
         if (newData > LAST_SUCCESS_BUILD_STAMP) {
+          //indicate reloading
+
           LAST_SUCCESS_BUILD_STAMP = newData;
           localStorage.setItem('LAST_SUCCESS_BUILD_STAMP', LAST_SUCCESS_BUILD_STAMP);
           // Refresh the page! This will naturally re-run everything,
@@ -122,4 +123,4 @@ function setUpWebSocket() {
 };
 
 setUpWebSocket();
-setInterval(setUpWebSocket, 1000);
+setInterval(setUpWebSocket, 500);

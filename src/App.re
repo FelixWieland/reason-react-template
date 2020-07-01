@@ -1,4 +1,7 @@
 [@react.component]
 let make = () => {
-  <> <HelloSayer what="World" /> </>;
+  <> 
+    <HelloSayer what="World" />
+    <HookExample />
+  </>;
 };
