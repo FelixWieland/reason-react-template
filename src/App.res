@@ -3,5 +3,5 @@ let make = () => {
   <> 
     <HelloSayer what="World" />
     <HookExample />
-  </>;
-};
+  </>
+}
